@@ -4861,18 +4861,17 @@ a img {
   position: fixed;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(325deg , #94ADCC, #537CB2, #172041); /* your gradient */
+  background: linear-gradient(to top , #FBD799, #94ADCC, #537CB2, #263468, #172041); /* your gradient */
   background: linear-gradient(
-  325deg,
-  #94ADCC 0%,
-  #537CB2 20%,
-  #172041 90%
+  to top,
+  #FBD799 0%,
+  #94ADCC 20%,
+  #537CB2 30%,
+  #263468 60%,
+  #172041 80%
 );
   background-repeat: no-repeat;
   background-size: cover;
-  /* REMOVE the next line if still present: */
-  /* background-attachment: fixed; */
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4887,8 +4886,9 @@ a img {
   z-index: 2;
 }
 
+/* Pushes the about section down */
 .hero-spacer {
-  height: 100vh; /* Pushes the about section down */
+  height: 100vh; 
 }
 
 body, html {
@@ -4901,9 +4901,7 @@ section {
   position: relative;
   z-index: 1;
   background: white;
-  /*padding: 30px 375px; /* Add padding so content doesn't overlap header */
-  /*left:-100px;*/
-   padding: 30px 50px; /* Add padding so content doesn't overlap header */
+   padding: 30px 50px; 
   
 }
 
